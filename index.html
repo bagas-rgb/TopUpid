@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopUPid - Top Up Game Terpercaya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header dan Navigasi -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-section">
+                <h1 class="logo">TopUPid</h1>
+                <p class="tagline">Proses cepat 24 jam</p>
+            </div>
+            
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#login" class="nav-link"><i class="fas fa-user"></i> Akun/Login</a></li>
+                    <li><a href="#catalog" class="nav-link"><i class="fas fa-gamepad"></i> Katalog</a></li>
+                    <li><a href="#cart" class="nav-link cart-link"><i class="fas fa-shopping-cart"></i> Keranjang <span class="cart-count">0</span></a></li>
+                    <li><a href="#checkout" class="nav-link"><i class="fas fa-cash-register"></i> Checkout</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-headset"></i> Kontak</a></li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home/Hero Section -->
+        <section id="home" class="hero section active">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">Selamat Datang di <span class="highlight">TopUPid</span></h2>
+                    <p class="hero-subtitle">Top up game favoritmu dengan proses cepat dan aman</p>
+                    <p class="hero-description">
+                        TopUPid adalah platform top up game terpercaya dengan proses instan 24 jam. 
+                        Dapatkan diamond, UC, dan coins untuk game favoritmu dengan harga terbaik dan berbagai metode pembayaran.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#catalog" class="btn btn-primary">Lihat Katalog <i class="fas fa-arrow-right"></i></a>
+                        <a href="#login" class="btn btn-secondary">Buat Akun</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gaming Setup">
+                </div>
+            </div>
+        </section>
+
+        <!-- Login/Register Section -->
+        <section id="login" class="login-section section">
+            <div class="container">
+                <h2 class="section-title">Masuk atau Buat Akun</h2>
+                <div class="login-container">
+                    <div class="login-form">
+                        <h3>Masuk ke Akun Anda</h3>
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="nama@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Kata Sandi</label>
+                                <input type="password" id="password" placeholder="Kata sandi Anda" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Masuk</button>
+                        </form>
+                    </div>
+                    
+                    <div class="divider">
+                        <span>ATAU</span>
+                    </div>
+                    
+                    <div class="register-form">
+                        <h3>Buat Akun Baru</h3>
+                        <form id="registerForm">
+                            <div class="form-group">
+                                <label for="reg-name">Nama Lengkap</label>
+                                <input type="text" id="reg-name" placeholder="Nama lengkap Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg-email">Email</label>
+                                <input type="email" id="reg-email" placeholder="nama@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg-password">Kata Sandi</label>
+                                <input type="password" id="reg-password" placeholder="Minimal 8 karakter" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg-phone">Nomor Telepon</label>
+                                <input type="tel" id="reg-phone" placeholder="0812-3456-7890" required>
+                            </div>
+                            <button type="submit" class="btn btn-secondary">Daftar Sekarang</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catalog Section -->
+        <section id="catalog" class="catalog-section section">
+            <div class="container">
+                <h2 class="section-title">Pilih Game Favoritmu</h2>
+                <p class="section-subtitle">Top up diamond, UC, dan coins dengan harga terbaik</p>
+                
+                <div class="games-container">
+                    <!-- Mobile Legends -->
+                    <div class="game-card" data-game="ml">
+                        <div class="game-header">
+                            <!-- Tempat untuk gambar sampul ML -->
+                            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mobile Legends" class="game-cover">
+                            <div class="game-title">
+                                <i class="fas fa-gem"></i>
+                                <h3>Mobile Legends</h3>
+                                <span class="game-badge">Diamond</span>
+                            </div>
+                        </div>
+                        <div class="game-products">
+                            <h4>Pilihan Diamond:</h4>
+                            <div class="product-list" id="ml-products">
+                                <!-- Produk ML akan dimuat via JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Free Fire -->
+                    <div class="game-card" data-game="ff">
+                        <div class="game-header">
+                            <!-- Tempat untuk gambar sampul FF -->
+                            <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Free Fire" class="game-cover">
+                            <div class="game-title">
+                                <i class="fas fa-gem"></i>
+                                <h3>Free Fire</h3>
+                                <span class="game-badge">Diamond</span>
+                            </div>
+                        </div>
+                        <div class="game-products">
+                            <h4>Pilihan Diamond:</h4>
+                            <div class="product-list" id="ff-products">
+                                <!-- Produk FF akan dimuat via JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- PUBG -->
+                    <div class="game-card" data-game="pubg">
+                        <div class="game-header">
+                            <!-- Tempat untuk gambar sampul PUBG -->
+                            <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="PUBG Mobile" class="game-cover">
+                            <div class="game-title">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <h3>PUBG Mobile</h3>
+                                <span class="game-badge">UC</span>
+                            </div>
+                        </div>
+                        <div class="game-products">
+                            <h4>Pilihan UC:</h4>
+                            <div class="product-list" id="pubg-products">
+                                <!-- Produk PUBG akan dimuat via JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- eFootball -->
+                    <div class="game-card" data-game="efootball">
+                        <div class="game-header">
+                            <!-- Tempat untuk gambar sampul eFootball -->
+                            <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="eFootball" class="game-cover">
+                            <div class="game-title">
+                                <i class="fas fa-coins"></i>
+                                <h3>eFootball</h3>
+                                <span class="game-badge">Coins</span>
+                            </div>
+                        </div>
+                        <div class="game-products">
+                            <h4>Pilihan Coins:</h4>
+                            <div class="product-list" id="efootball-products">
+                                <!-- Produk eFootball akan dimuat via JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Payment Methods -->
+                <div class="payment-methods">
+                    <h3>Metode Pembayaran:</h3>
+                    <div class="payment-icons">
+                        <div class="payment-icon"><i class="fab fa-cc-visa"></i> <span>VISA</span></div>
+                        <div class="payment-icon"><i class="fab fa-cc-mastercard"></i> <span>MasterCard</span></div>
+                        <div class="payment-icon"><i class="fas fa-mobile-alt"></i> <span>OVO</span></div>
+                        <div class="payment-icon"><i class="fas fa-wallet"></i> <span>DANA</span></div>
+                        <div class="payment-icon"><i class="fas fa-university"></i> <span>Transfer Bank</span></div>
+                        <div class="payment-icon"><i class="fas fa-store"></i> <span>Alfamart</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart" class="cart-section section">
+            <div class="container">
+                <h2 class="section-title">Keranjang Belanja</h2>
+                <div class="cart-container">
+                    <div class="cart-items" id="cart-items">
+                        <!-- Item keranjang akan dimuat via JavaScript -->
+                        <div class="empty-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Keranjang belanja Anda kosong</p>
+                            <a href="#catalog" class="btn btn-primary">Lihat Katalog</a>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-summary">
+                        <h3>Ringkasan Belanja</h3>
+                        <div class="summary-details">
+                            <div class="summary-row">
+                                <span>Total Item:</span>
+                                <span id="total-items">0</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Subtotal:</span>
+                                <span id="subtotal">Rp 0</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>Total:</span>
+                                <span id="total-price">Rp 0</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-checkout" id="proceed-checkout">Lanjut ke Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Checkout Section -->
+        <section id="checkout" class="checkout-section section">
+            <div class="container">
+                <h2 class="section-title">Checkout</h2>
+                <div class="checkout-container">
+                    <div class="checkout-form">
+                        <h3>Detail Pembelian</h3>
+                        <form id="checkoutForm">
+                            <div class="form-group">
+                                <label for="checkout-game">Game</label>
+                                <input type="text" id="checkout-game" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkout-product">Produk</label>
+                                <input type="text" id="checkout-product" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="player-id">ID Player</label>
+                                <input type="text" id="player-id" placeholder="Masukkan ID Player" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="player-server">Server</label>
+                                <input type="text" id="player-server" placeholder="Masukkan Server" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="payment-method">Metode Pembayaran</label>
+                                <select id="payment-method" required>
+                                    <option value="">Pilih metode pembayaran</option>
+                                    <option value="visa">VISA</option>
+                                    <option value="mastercard">MasterCard</option>
+                                    <option value="ovo">OVO</option>
+                                    <option value="dana">DANA</option>
+                                    <option value="bank">Transfer Bank</option>
+                                    <option value="alfamart">Alfamart</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-checkout">Email</label>
+                                <input type="email" id="email-checkout" placeholder="Email untuk notifikasi" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-checkout">No. Telepon</label>
+                                <input type="tel" id="phone-checkout" placeholder="No. telepon untuk notifikasi" required>
+                            </div>
+                            <div class="checkout-total">
+                                <h4>Total Pembayaran: <span id="checkout-total">Rp 0</span></h4>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Konfirmasi Pembelian</button>
+                        </form>
+                    </div>
+                    
+                    <div class="checkout-info">
+                        <h3>Instruksi Pembayaran</h3>
+                        <div class="instructions">
+                            <p><strong>Langkah-langkah pembelian:</strong></p>
+                            <ol>
+                                <li>Isi ID Player dan Server dengan benar</li>
+                                <li>Pilih metode pembayaran yang diinginkan</li>
+                                <li>Isi email dan nomor telepon untuk notifikasi</li>
+                                <li>Klik "Konfirmasi Pembelian"</li>
+                                <li>Lakukan pembayaran sesuai instruksi yang diberikan</li>
+                                <li>Tunggu proses verifikasi (maksimal 15 menit)</li>
+                                <li>Diamond/UC/Coins akan langsung masuk ke akun game Anda</li>
+                            </ol>
+                        </div>
+                        <div class="notes">
+                            <p><strong>Catatan:</strong></p>
+                            <ul>
+                                <li>Proses top up 24 jam</li>
+                                <li>Pastikan ID Player dan Server sudah benar</li>
+                                <li>Pembayaran harus dilakukan dalam waktu 1 jam</li>
+                                <li>Hubungi admin jika ada kendala</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section">
+            <div class="container">
+                <h2 class="section-title">Hubungi Admin</h2>
+                <p class="section-subtitle">Butuh bantuan? Chat admin kami yang siap membantu 24 jam</p>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Informasi Kontak</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-headset"></i>
+                            <div>
+                                <h4>Customer Service</h4>
+                                <p>24 jam / 7 hari</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+62 895-6051-88248</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>choiruzsahal@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Jam Operasional</h4>
+                                <p>24 Jam Nonstop</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Kirim Pesan</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="contact-name">Nama</label>
+                                <input type="text" id="contact-name" placeholder="Nama Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" placeholder="nama@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-subject">Subjek</label>
+                                <input type="text" id="contact-subject" placeholder="Subjek pesan" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Pesan</label>
+                                <textarea id="contact-message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">TopUPid</h3>
+                    <p class="footer-tagline">Proses cepat 24 jam</p>
+                    <p class="footer-description">
+                        Platform top up game terpercaya dengan proses instan dan harga terbaik.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Menu</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#catalog">Katalog</a></li>
+                        <li><a href="#login">Akun/Login</a></li>
+                        <li><a href="#cart">Keranjang</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Game</h4>
+                    <ul class="footer-links">
+                        <li><a href="#catalog" data-game="ml">Mobile Legends</a></li>
+                        <li><a href="#catalog" data-game="ff">Free Fire</a></li>
+                        <li><a href="#catalog" data-game="pubg">PUBG Mobile</a></li>
+                        <li><a href="#catalog" data-game="efootball">eFootball</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Pembayaran</h4>
+                    <div class="payment-footer">
+                        <div class="payment-small"><i class="fab fa-cc-visa"></i></div>
+                        <div class="payment-small"><i class="fab fa-cc-mastercard"></i></div>
+                        <div class="payment-small"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="payment-small"><i class="fas fa-wallet"></i></div>
+                    </div>
+                    <p class="footer-copy">© 2025 NoirProd. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle toast-icon"></i>
+            <div class="toast-message">Produk berhasil ditambahkan ke keranjang!</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
